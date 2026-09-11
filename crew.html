@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Crew – FILMOZA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-film">FILM</span><span class="logo-oza">OZA</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="crew.html" class="active">Find Crew</a></li>
+        <li><a href="index.html#how-it-works">How It Works</a></li>
+        <li><a href="index.html#categories">Departments</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="crew.html" class="btn btn-outline">Browse Crew</a>
+        <a href="#" class="btn btn-primary">Join as Crew</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── PAGE HEADER ── -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Find Your Crew</h1>
+      <p>Browse 1,200+ verified film professionals across every department.</p>
+    </div>
+  </div>
+
+  <!-- ── SEARCH & FILTER BAR ── -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-bar-wrap">
+        <div class="search-input-group">
+          <i class="fas fa-search search-icon"></i>
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search by name, role, or skill…"
+            aria-label="Search crew members"
+          />
+          <button class="search-clear" id="searchClear" aria-label="Clear search">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="filter-group">
+          <select id="deptFilter" class="filter-select" aria-label="Filter by department">
+            <option value="">All Departments</option>
+            <option value="Direction">Direction</option>
+            <option value="Cinematography">Cinematography</option>
+            <option value="Editing">Editing</option>
+            <option value="Sound Design">Sound Design</option>
+            <option value="Production Design">Production Design</option>
+            <option value="VFX & Animation">VFX &amp; Animation</option>
+            <option value="Hair & Makeup">Hair &amp; Makeup</option>
+            <option value="Costume Design">Costume Design</option>
+          </select>
+          <select id="expFilter" class="filter-select" aria-label="Filter by experience">
+            <option value="">All Experience</option>
+            <option value="entry">Entry Level (1–3 yrs)</option>
+            <option value="mid">Mid Level (4–7 yrs)</option>
+            <option value="senior">Senior (8+ yrs)</option>
+          </select>
+          <select id="availFilter" class="filter-select" aria-label="Filter by availability">
+            <option value="">Any Availability</option>
+            <option value="available">Available Now</option>
+            <option value="soon">Available Soon</option>
+          </select>
+        </div>
+      </div>
+      <div class="search-meta">
+        <span id="resultCount" class="result-count">Loading…</span>
+        <div class="sort-group">
+          <label for="sortSelect">Sort:</label>
+          <select id="sortSelect" class="filter-select" aria-label="Sort results">
+            <option value="featured">Featured</option>
+            <option value="name">Name A–Z</option>
+            <option value="exp-desc">Most Experience</option>
+            <option value="projects-desc">Most Projects</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CREW GRID ── -->
+  <section class="crew-listing section">
+    <div class="container">
+      <div class="crew-grid" id="crewGrid">
+        <!-- Populated by JS -->
+      </div>
+      <div class="no-results hidden" id="noResults">
+        <i class="fas fa-film"></i>
+        <h3>No crew members found</h3>
+        <p>Try adjusting your search or filters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-film">FILM</span><span class="logo-oza">OZA</span>
+          </a>
+          <p>The professional bridge between film crews and producers.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>For Producers</h4>
+          <ul>
+            <li><a href="crew.html">Browse Crew</a></li>
+            <li><a href="#">Post a Project</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>For Crew</h4>
+          <ul>
+            <li><a href="#">Create a Profile</a></li>
+            <li><a href="#">Find Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About FILMOZA</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FILMOZA. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

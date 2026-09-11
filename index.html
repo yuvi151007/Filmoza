@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FILMOZA – Where Talent Meets Vision</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-film">FILM</span><span class="logo-oza">OZA</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="crew.html">Find Crew</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#categories">Departments</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="crew.html" class="btn btn-outline">Browse Crew</a>
+        <a href="#join" class="btn btn-primary">Join as Crew</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">The Film Industry's Talent Bridge</div>
+      <h1 class="hero-title">
+        Connecting <span class="highlight">Film Crews</span><br/>
+        with <span class="highlight">Producers</span>
+      </h1>
+      <p class="hero-subtitle">
+        FILMOZA is the platform where directors, DPs, editors, sound designers,
+        and every behind-the-scenes professional connect with producers who bring stories to life.
+      </p>
+      <div class="hero-actions">
+        <a href="crew.html" class="btn btn-primary btn-lg">
+          <i class="fas fa-search"></i> Find Crew Members
+        </a>
+        <a href="#how-it-works" class="btn btn-ghost btn-lg">
+          <i class="fas fa-play-circle"></i> How It Works
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">1,200+</span>
+          <span class="stat-label">Crew Members</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">340+</span>
+          <span class="stat-label">Producers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">580+</span>
+          <span class="stat-label">Projects Done</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <i class="fas fa-chevron-down bounce"></i>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ── -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Simple Process</span>
+        <h2>How FILMOZA Works</h2>
+        <p>From discovery to production — we make the connection seamless.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+          <div class="step-number">01</div>
+          <h3>Create Your Profile</h3>
+          <p>Crew members build a rich portfolio showcasing their skills, past projects, awards, and demo reels.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="step-card">
+          <div class="step-icon"><i class="fas fa-search"></i></div>
+          <div class="step-number">02</div>
+          <h3>Producers Browse</h3>
+          <p>Film producers search by role, experience, location, genre expertise, and availability.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="step-card">
+          <div class="step-icon"><i class="fas fa-handshake"></i></div>
+          <div class="step-number">03</div>
+          <h3>Connect & Collaborate</h3>
+          <p>Send a direct inquiry, review portfolios in depth, and start building your dream crew.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="step-card">
+          <div class="step-icon"><i class="fas fa-film"></i></div>
+          <div class="step-number">04</div>
+          <h3>Roll Camera</h3>
+          <p>Your project comes to life with the right talent in every department, on time and on budget.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURED CREW ── -->
+  <section class="featured-crew section" id="featured">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Top Talent</span>
+        <h2>Featured Crew Members</h2>
+        <p>Handpicked professionals ready for your next production.</p>
+      </div>
+      <div class="crew-grid" id="featuredGrid">
+        <!-- Populated by JS -->
+      </div>
+      <div class="section-cta">
+        <a href="crew.html" class="btn btn-primary btn-lg">View All Crew Members <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DEPARTMENTS / CATEGORIES ── -->
+  <section class="categories section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Explore by Role</span>
+        <h2>Film Departments</h2>
+        <p>Every department of a professional production, covered.</p>
+      </div>
+      <div class="categories-grid">
+        <a href="crew.html?dept=direction" class="category-card">
+          <div class="cat-icon"><i class="fas fa-clapperboard"></i></div>
+          <h3>Direction</h3>
+          <span class="cat-count">87 members</span>
+        </a>
+        <a href="crew.html?dept=cinematography" class="category-card">
+          <div class="cat-icon"><i class="fas fa-camera"></i></div>
+          <h3>Cinematography</h3>
+          <span class="cat-count">134 members</span>
+        </a>
+        <a href="crew.html?dept=editing" class="category-card">
+          <div class="cat-icon"><i class="fas fa-scissors"></i></div>
+          <h3>Editing</h3>
+          <span class="cat-count">112 members</span>
+        </a>
+        <a href="crew.html?dept=sound" class="category-card">
+          <div class="cat-icon"><i class="fas fa-microphone"></i></div>
+          <h3>Sound Design</h3>
+          <span class="cat-count">95 members</span>
+        </a>
+        <a href="crew.html?dept=production-design" class="category-card">
+          <div class="cat-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Production Design</h3>
+          <span class="cat-count">76 members</span>
+        </a>
+        <a href="crew.html?dept=vfx" class="category-card">
+          <div class="cat-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+          <h3>VFX & Animation</h3>
+          <span class="cat-count">63 members</span>
+        </a>
+        <a href="crew.html?dept=makeup" class="category-card">
+          <div class="cat-icon"><i class="fas fa-star"></i></div>
+          <h3>Hair & Makeup</h3>
+          <span class="cat-count">58 members</span>
+        </a>
+        <a href="crew.html?dept=costume" class="category-card">
+          <div class="cat-icon"><i class="fas fa-shirt"></i></div>
+          <h3>Costume Design</h3>
+          <span class="cat-count">44 members</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Success Stories</span>
+        <h2>What They Say About FILMOZA</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"FILMOZA cut our pre-production time in half. We found our entire camera department within a week — all experienced, all professional."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#e63946;">RK</div>
+            <div>
+              <strong>Rajan Kapoor</strong>
+              <span>Producer, Wavelength Films</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"As a DP, getting noticed was always the hard part. FILMOZA gave me a platform where my work speaks for itself. Three features later, I'm busier than ever."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#2a9d8f;">SM</div>
+            <div>
+              <strong>Sara Mehta</strong>
+              <span>Director of Photography</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"The profile depth here is unmatched. I can see a sound designer's entire reel, their kit list, and references — before ever sending a message."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#f4a261;">DA</div>
+            <div>
+              <strong>David Ansari</strong>
+              <span>Executive Producer, NovaCine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── JOIN CTA ── -->
+  <section class="join-cta section" id="join">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-text">
+          <h2>Ready to Join FILMOZA?</h2>
+          <p>Whether you're a seasoned gaffer or a first-time producer, FILMOZA is your home in the film industry.</p>
+        </div>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-primary btn-lg">Join as Crew Member</a>
+          <a href="crew.html" class="btn btn-outline-light btn-lg">I'm a Producer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-film">FILM</span><span class="logo-oza">OZA</span>
+          </a>
+          <p>The professional bridge between film crews and producers. Every great film starts with the right team.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>For Producers</h4>
+          <ul>
+            <li><a href="crew.html">Browse Crew</a></li>
+            <li><a href="crew.html">Search by Department</a></li>
+            <li><a href="#">Post a Project</a></li>
+            <li><a href="#">How to Hire</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>For Crew</h4>
+          <ul>
+            <li><a href="#">Create a Profile</a></li>
+            <li><a href="#">Upload Reel</a></li>
+            <li><a href="#">Find Projects</a></li>
+            <li><a href="#">Career Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About FILMOZA</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FILMOZA. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
